@@ -6,7 +6,7 @@
 /*   By: jubaldo <jubaldo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:17:11 by jubaldo           #+#    #+#             */
-/*   Updated: 2024/05/27 18:21:07 by jubaldo          ###   ########.fr       */
+/*   Updated: 2024/05/28 00:29:51 by jubaldo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,23 +143,13 @@ int		handle_keyrelease(int keycode, t_cub3d *game);
 
 // RAYCASTING
 void	init_ray(t_cub3d *game, t_ray *ray, int x);
-void	calc_step_and_side_dist(t_cub3d *game, t_ray *ray);
 void	calc_perp_wall_dist(t_cub3d *game, t_ray *ray);
 void	calc_line_height(t_cub3d *game, t_ray *ray);
-void	calc_all(t_cub3d *game, t_ray *ray);
 void	draw_line(t_cub3d *game, int x, t_ray *ray);
 void	perform_dda(t_cub3d *game, t_ray *ray);
 void	perform_raycasting(t_cub3d *game);
 
 // DRAW
-int		get_line_height(t_ray *ray, int win_height);
-int		get_draw_start(int line_height, int win_height);
-int		get_draw_end(int line_height, int win_height);
-double	get_wall_x(t_ray *ray, t_player *player);
-int		get_texture_x(t_ray *ray, double wall_x);
-void	init_draw_params(t_draw_params *params, t_cub3d *game, \
-							t_ray *ray, int line_height);
-void	draw_text_line(t_cub3d *game, int x, t_ray *ray, t_draw_params *params);
 void	draw_line(t_cub3d *game, int x, t_ray *ray);
 void	draw_floor_and_ceiling(t_cub3d *game);
 

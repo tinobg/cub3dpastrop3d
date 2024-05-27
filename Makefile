@@ -6,7 +6,7 @@
 #    By: jubaldo <jubaldo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/14 17:17:38 by jubaldo           #+#    #+#              #
-#    Updated: 2024/05/27 18:13:37 by jubaldo          ###   ########.fr        #
+#    Updated: 2024/05/28 00:31:04 by jubaldo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,6 @@ SRCS		=	events/handle_keypress.c 	\
 				player/update.c \
 				raycasting/calculations.c \
 				raycasting/draw.c \
-				raycasting/getters.c \
 				raycasting/init_ray.c \
 				raycasting/perform_dda.c \
 				raycasting/perform_raycasting.c \
